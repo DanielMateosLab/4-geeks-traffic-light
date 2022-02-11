@@ -4,7 +4,7 @@ import Checkbox from "./Checkbox.jsx";
 const Nav = ({ setColors }) => {
 	function onSetPurple(event) {
 		event.currentTarget.checked
-			? setColors((colors) => [...colors, "purple"])
+			? setColors((colors) => [...colors, "mediumpurple"])
 			: setColors((colors) => colors.slice(0, -1));
 	}
 
