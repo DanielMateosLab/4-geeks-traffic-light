@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Light from "./Light.jsx";
 
-const TrafficLight = () => {
-	const colors = ["red", "orange", "limegreen"];
-
+const TrafficLight = ({ colors }) => {
 	const [activeColor, setActive] = useState();
 
 	return (
