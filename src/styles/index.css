@@ -1,0 +1,33 @@
+.root {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-box {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: black;
+    position: relative;
+}
+
+.tl-box::before {
+    z-index: -1;
+    content: "";
+    background: black;
+    width: 0.5rem;
+    height: 50vh;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+}
+
+.light {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+.light:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
