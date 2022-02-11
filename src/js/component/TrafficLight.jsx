@@ -10,8 +10,8 @@ const TrafficLight = () => {
 		<div className="tl-box">
 			{colors.map((color) => (
 				<Light
-					color={color}
 					key={color}
+					color={color}
 					active={color == activeColor}
 					setActive={setActive}
 				/>
