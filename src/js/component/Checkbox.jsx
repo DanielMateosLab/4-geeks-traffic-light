@@ -9,7 +9,7 @@ const Checkbox = ({ text, id, onChange }) => (
 			id={id}
 			onChange={onChange}
 		/>
-		<label className="form-check-label" for="looping">
+		<label className="form-check-label" htmlFor="looping">
 			{text}
 		</label>
 	</div>
