@@ -17,14 +17,12 @@ nav {
     border-radius: 0.5rem;
 }
 
-
 .tl-box {
     padding: 1rem;
     border-radius: 1rem;
     background: black;
     position: relative;
 }
-
 .tl-box::before {
     z-index: -1;
     content: "";
@@ -34,6 +32,10 @@ nav {
     position: absolute;
     top: -50%;
     left: 50%;
+}
+
+.tl-box, .tl-box::before {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .light {
