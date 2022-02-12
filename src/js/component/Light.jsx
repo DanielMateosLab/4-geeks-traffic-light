@@ -15,6 +15,7 @@ const Light = ({ color, active, setActive }) => {
 				style={active ? { boxShadow: activeBoxShadow } : {}}
 			/>
 			<div className="lightbulb" />
+			<div className="light-grid"></div>
 		</div>
 	);
 };
