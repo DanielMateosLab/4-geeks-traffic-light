@@ -17,17 +17,17 @@ const TrafficLight = ({ colors, looping }) => {
 	}, [count]);
 
 	function removePreviousInterval() {
-		console.log(`Cleaning ` + intervalId);
 		clearInterval(intervalId);
 	}
 
 	useEffect(() => {
 		intervalId && removePreviousInterval();
 
-		const id = setInterval(addCount, 1000);
-		console.log(`Interval set with id ${id}`);
-		setIntervalId(id);
-	}, [looping, colors]);
+		if (looping) {
+			const id = setInterval(addCount, 1000);
+			setIntervalId(id);
+		}
+	}, [looping, colors]); // The hooks depends on colors to include/exclude the purple light in the loop
 
 	return (
 		<div className="tl-box">

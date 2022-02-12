@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Nav from "./Nav.jsx";
 
 import TrafficLight from "./TrafficLight.jsx";
@@ -9,7 +9,11 @@ const Home = () => {
 
 	return (
 		<div className="root">
-			<Nav setColors={setColors} setLooping={setLooping} />
+			<Nav
+				setColors={setColors}
+				setLooping={setLooping}
+				looping={looping}
+			/>
 			<TrafficLight colors={colors} looping={looping} />
 		</div>
 	);
